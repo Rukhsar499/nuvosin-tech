@@ -690,11 +690,63 @@ buttons:hover::before {
   text-align: left;
 }
 .nvads{
-  font-size: 22px;
+  font-size: 24px;
 }
 .principle{
-  margin-top: -200px;
+  margin-top: -120px;
   position: relative;
+}
+.tab-but{
+  margin: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 30px 0px #0000000A;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000;
+    background-color: #ffc107;
+    width: 100%;
+}
+.nav-pills{
+text-align: center;
+}
+.wih{
+width: 50%;
+text-align: -webkit-center;
+}
+.tab-content{
+  padding: 40px;
+}
+.image-anime:hover:after {
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+}
+.image-anime:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.mission-vision-image {
+	display: block;
+	border-radius: 40px;
+	overflow: hidden;
+}
+.image-anime{
+	position: relative;
+	overflow: hidden;
+}
+.mission-vision-image img{
+	width: 100%;
+	aspect-ratio: 1 / 0.63;
+	object-fit: cover;
+	border-radius: 20px;
 }
 @media (min-width: 1200px) and (max-width: 1400px) {}
 

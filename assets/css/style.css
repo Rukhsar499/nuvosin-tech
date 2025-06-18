@@ -370,6 +370,31 @@ background-repeat: no-repeat;
 .footer h3{
   font-size: 24px;
 }
+.custo ul li {
+    list-style: none;
+    color: #000;
+    padding-left: 25px; /* spacing for icon */
+    padding-bottom: 10px;
+    position: relative; /* added */
+}
+.custo ul{
+  padding-left: 0px;
+}
+.custo ul li::before {
+    content: '';
+    background-image: url(../img/setting.png);
+    background-size: contain; /* optional but recommended */
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 0;
+    top: 4px; /* optional adjustment */
+}
+.custo{
+  position: relative;
+  margin-top: 15px;
+}
   .footeil ul li::before {
     content: '';
     background-image: url(../img/arrow.png);
@@ -377,7 +402,7 @@ background-repeat: no-repeat;
     height: 15px;
     width: 15px;
     left: 0px;
-    margin-bottom: 10px;
+   margin-bottom: 10px; 
 }
 .footeil ul li {
     list-style: none;

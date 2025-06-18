@@ -865,6 +865,16 @@ text-align: -webkit-center;
     transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 1;
 }
+.detail-img h2{
+  text-align: left;
+  font-size: 30px;
+}
+.detail-img h3{
+  font-size: 26px;
+}
+.ijh{
+  margin: 20px 0px;
+}
 .mission-vision-image {
 	display: block;
 	border-radius: 40px;
@@ -879,6 +889,11 @@ text-align: -webkit-center;
 	aspect-ratio: 1 / 0.63;
 	object-fit: cover;
 	border-radius: 20px;
+}
+.detail-img{
+  display: block;
+ margin: 0 auto;
+ width: 80%;
 }
 @media (min-width: 1200px) and (max-width: 1400px) {}
 

@@ -53,11 +53,28 @@
     });
 
 
+// header link
+function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+       }
+       document.addEventListener('DOMContentLoaded', function () {
+      const currentPath = window.location.pathname.split("/").pop();
 
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
 
    
 
-// data aos
+
 
 
  

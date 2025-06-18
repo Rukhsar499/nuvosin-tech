@@ -40,6 +40,44 @@ h2 {
   text-align: center;
   text-transform: capitalize;
 }
+.navbar-nav .nav-link {
+  position: relative;
+  padding: 12px 20px;
+  color: #000;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* Pseudo-element for orange background */
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: -28%;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: #ffc107;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), 50% 100%, 0 calc(100% - 10px));
+  transition: height 0.3s ease;
+  z-index: -1;
+  
+}
+
+/* On hover or active – show the full background */
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+  height: 90;
+  
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #000;
+}
+.navbar-brand {
+    padding-top: 0; 
+    padding-bottom: 0;
+    }
 .blog{
 background-image: url(../img/1c9.png);
 width: 100%;

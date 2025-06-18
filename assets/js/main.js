@@ -54,23 +54,22 @@
 
 
 // header link
-function topFunction() {
-           document.body.scrollTop = 0;
-           document.documentElement.scrollTop = 0;
-       }
-       document.addEventListener('DOMContentLoaded', function () {
-      const currentPath = window.location.pathname.split("/").pop();
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-      const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      const linkHref = link.getAttribute("href").trim();
 
-      navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
+      // Remove existing active class (if any)
+      link.classList.remove("active");
+
+      // Match current page
+      if (linkHref === currentPage) {
+        link.classList.add("active");
+      }
     });
+  });
 
    
 

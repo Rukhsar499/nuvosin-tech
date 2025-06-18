@@ -40,6 +40,42 @@ h2 {
   text-align: center;
   text-transform: capitalize;
 }
+.dropdown-menu li a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.dropdown-menu li a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ffc107;
+  z-index: -1;
+  transition: width 0.3s ease-in-out;
+}
+.dropdown-item{
+  border-bottom: 1px solid #0000008e;
+}
+.dropdown-menu li a:hover::before {
+  width: 100%;
+}
+
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #ffc107;
+}
+.dropdown-menu{
+  border: none;
+  border-radius: 0px;
+}
 .navbar-nav .nav-link {
   position: relative;
   padding: 12px 20px;

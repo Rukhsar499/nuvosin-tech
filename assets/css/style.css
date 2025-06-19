@@ -1002,7 +1002,18 @@ buttons:hover::before {
   width: 80%;
 }
 
-@media (min-width: 1200px) and (max-width: 1400px) {}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .carousel-caption {
+    bottom: 20%;
+}
+.servicebox h5 {
+    font-size: 17px;
+}
+.nvads img{
+  width: 42px;
+  height: 42px;
+}
+}
 
 @media screen and (max-width: 767px) {
   .header-top {

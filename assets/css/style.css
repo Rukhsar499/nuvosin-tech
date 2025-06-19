@@ -1172,4 +1172,21 @@ buttons:hover::before {
   .bhb {
     margin-top: 30px;
   }
+  .carousel-caption h5 {
+    font-size: 20px;
+}
+.carousel-caption h1 {
+    font-size: 28px;
+    line-height: 32px;
+}
+.square-arrow {
+   width: 30px;
+    height: 30px;
+  }
+  .carousel-control-prev.square-arrow {
+    left: 15px;
+}
+.carousel-control-next.square-arrow {
+    right: 15px;
+}
 }
